@@ -1,2 +1,3 @@
-# docker_pull_image
-instead of docker pull image, using python
+# usage
+python docker_pull_image.py
+
