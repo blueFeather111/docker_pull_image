@@ -1,4 +1,4 @@
-This script is created when I encountered this problem due to my network:             
+This script was created when I encountered this problem due to my network:             
 $ docker pull ubuntu:20.04         
 Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)       
             
