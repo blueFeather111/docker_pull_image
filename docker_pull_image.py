@@ -135,7 +135,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     try:
-        image, tag = args.image.split(":", 1)
+        strList = args.image.split(":", 1)
+        image = strList[0]
+        if len(strList) > 1:
+            tag = strList[1]
+        else:
+            tag = "latest"
+            print(f"No tag specified, using latest tag: {tag}")
     except ValueError:
         print("Error: Image should be in the format 'name:tag'")
         sys.exit(1)
